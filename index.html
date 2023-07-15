@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylemobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Raleway&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+      integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+      crossorigin="anonymous">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"></script>
+    <title>Mar</title>
+  </head>
+  <body>
+    <header>
+      <!--Navegación-->
+      <nav class="menu">
+        <div class="logo"><h1 id="logotext">MAR</h1></div>
+        <button id="carrito" onclick="mostrarcompras()"><img
+            src="imagenes/shopping-cart.png" alt="trolley"></button>
+        <a href="/user.html" class="usuario"><img src="imagenes/user.png"
+            alt="usericon"></a>
+
+        <!--lista de páginas-->
+        <div class="pagsPc">
+          <ul class="pagsPcList">
+            <li class="pagsPcItem"><a href="./index.html">Inicio</a></li>
+            <li class="pagsPcItem"><a href="./indexproductos.html">Productos</a></li>
+            <li class="pagsPcItem"><a href="./indexcontact.html">Contacto</a></li>
+            <li class="pagsPcItem"><a href="./indexhowbuy.html">¿Cómo
+                comprar?</a></li>
+          </ul>
+        </div>
+        <!-- fin lista de páginas-->
+        <!--barra de busqueda pc-->
+        <nav class="buscador-containerpc">
+          <input type="search" name="search" placeholder="Buscar"
+            class="buscarpc">
+          <a href="#"><img src="imagenes/Lupa pc.png" alt></a>
+        </nav>
+        <!--Fin de barra de busqueda pc-->
+      </nav>
+      <!--Fin de la navegación-->
+      <!--barra de busqueda mobile-->
+      <nav class="buscador-container">
+        <input type="search" name="search" placeholder="Buscar" class="buscar">
+        <a href="#"><img src="imagenes/Lupa.png" alt></a>
+      </nav>
+      <!--Fin de barra de busqueda mobile-->
+
+    </header>
+
+    <!--Carrito aside-->
+    <aside id="carritoaside" class="micompra">
+      <nav class="carritonav">
+        <h3>Mi compra</h3>
+        <button onclick="windowclose()" id="arrowback"><img
+            src="imagenes/Arrow 1.png" alt="arrowback"></button>
+      </nav>
+      <img src="imagenes/shopping-cart.png" alt="fondocarrito" id="carritoimg">
+    </aside>
+
+    <!--Carousel-->
+    <div id="carousel-example-generic" class="carousel slide"
+      data-ride="carousel">
+
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0"
+          class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active" id="active">
+          <img src="imagenes/hechoamano.jpg" alt="...">
+          <div class="carousel-caption">
+            <p>Productos hechos a mano</p>
+          </div>
+        </div>
+        <div class="item" onclick="newin()" id="newin">
+          <img src="imagenes/marmodel.jpg" alt="...">
+          <div class="carousel-caption" id="newinletter">
+            <p>New In</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="imagenes/envios.jpg" alt="...">
+          <div class="carousel-caption">
+            <p>¡Envíos a todo el país!</p>
+          </div>
+        </div>
+
+        <!-- Controles -->
+        <a class="left carousel-control" href="#carousel-example-generic"
+          role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic"
+          role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+    </div>
+
+    <section id="quienesSomos">
+      <div id="quienesSomoscontainer">
+        <span id="line"></span>
+        <h3>¿Quiénes somos?</h3>
+        <span id="line"></span>
+      </div>
+      <p id="quienesSomostext">MAR es un emprendimiento de una sola persona, una
+        estudiante de diseño e indumentaria, con la intención de dar a conocer y
+        comerciar prendas que crea desde cero para eventualmente formar su
+        propio negocio. Esta web es el medio entre ella y aquellos que quieran y
+        puedan apoyarla con su proyecto.</p>
+
+    </section>
+
+    <section id="ProductosDestacados">
+
+      <div id="ProductosDestacadoscontainer">
+        <span id="line"></span>
+        <h3>Productos Destacados</h3>
+        <span id="line"></span>
+      </div>
+
+      <section class="catalogo">
+
+        <div class="producto" id="4">
+          <img src="imagenes/top.png" alt>
+          <h4>Top deportivo</h4>
+          <p>$3500</p>
+        </div>
+
+        <div class="producto" id="5">
+          <img src="imagenes/mezclilla ejemplo.jpg" alt>
+          <h4>Vestido vintage</h4>
+          <p>$10.000</p>
+        </div>
+
+        <div class="producto" id="6">
+          <img src="imagenes/lenceria.png" alt>
+          <h4>Conjunto de lenceria</h4>
+          <p>$6800</p>
+        </div>
+
+      </section>
+
+    </section>
+
+    <section id="cómoComprar">
+      <div id="cómoComprarcontainer">
+        <span id="line"></span>
+        <h3>¿Cómo comprar?</h3>
+        <span id="line"></span>
+      </div>
+      <p id="cómoComprartext"><b>ELEGÍ LOS PRODUCTOS</b>. En el menú inferior
+        encontrarás el apartado "Productos". O bien, si buscás un producto en
+        particular, podes ingresar el nombre en el buscador principal que se
+        encuentra en la parte superior de la página.
+
+        <br><b>SELECCIONÁ LO QUE QUERÉS Y AGREGALO A TU CARRITO</b>. Hacé click
+        sobre el producto que querés comprar. Seleccioná el color, el talle y
+        cantidad deseada (Si es que no es un producto único). Para saber cuál es
+        el talle correcto, consulta la tabla de talles. Presioná el botón
+        “AGregar al carrito”. Podés agregar más productos en “seguir comprando”
+        o clickear en el botón “finalizar compra” para pasar a la plataforma de
+        pagos.
+
+        <br><b>FINALIZACIÓN DE LA COMPRA</b>: Finalmente deberás completar tus
+        datos, dirección de entrega, método de envío, método de pago. Una vez
+        finalizada tu compra, llegará a nuestro departamento de ventas y se te
+        enviará información sobre el estado de tu pedido a través de tu correo
+        electrónico.
+
+        <br><b>Eso es todo! Esperá tu pedido sin moverte de tu casa!</b></p>
+
+    </section>
+
+    <!--Hamburguer-->
+
+    <div id="menuhamburger" class="menubur">
+      <div id="Pags">
+        <a href="./index.html">Inicio</a>
+        <a href="./indexproductos.html">Productos</a>
+        <a href="./indexcontact.html">Contacto</a>
+        <a href="./indexhowbuy.html">¿Cómo comprar?</a>
+      </div>
+    </div>
+
+    <!--Boton hamburguer-->
+    <footer id="main-footer">
+      <button class="toggle-btn" id="toggle-btn" onclick="mostrarbur()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,749 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background: #c3aceb;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  background-color: #c3aceb;
+}
+.menu {
+  display: flex;
+  width: 100%;
+  height: 51px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 34.38%,
+      rgba(0, 0, 0, 0) 66.94%
+    )
+    #8368e6;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  height: max-content;
+  width: 55%;
+  order: 2;
+  padding-bottom: 7px;
+}
+#logotext {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 44.16px;
+
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: none;
+}
+#carrito {
+  width: 20%;
+  height: max-content;
+  border: none;
+  background: none;
+  z-index: 1;
+  order: 1;
+}
+#carrito img {
+  z-index: 0;
+}
+/*Carrito aside*/
+.micompra {
+  transform: translateX(100%);
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 234px;
+  height: 100%;
+  z-index: 16;
+  transition: 0.1s ease-out;
+  background-color: #d2bbda;
+}
+.mostrarcompra {
+  transform: translate(0%);
+}
+.carritonav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: flex-start;
+  width: 100%;
+  height: 4%;
+  background: rgba(131, 104, 230, 0.34);
+  border-bottom: 1px solid #ffffff;
+}
+.micompra h3 {
+  width: max-content;
+  margin: 0px;
+  padding: 1px 0 0 10px;
+  font-family: "Raleway";
+  font-style: normal;
+  flex-grow: 1;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+
+  color: #ffffff;
+}
+
+.micompra #carritoimg {
+  align-self: center;
+  position: relative;
+  top: 35%;
+
+  opacity: 0.2;
+  height: 128px;
+  width: 125px;
+}
+.micompra #arrowback {
+  padding-right: 5px;
+  background: none;
+  border: none;
+}
+
+.usuario {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 20%;
+  height: max-content;
+  order: 3;
+}
+
+/*Barra navegación*/
+.buscador-container {
+  margin: auto;
+  width: 80%;
+  height: 29px;
+  top: 51px;
+  padding: 0;
+
+  background: #ffffff;
+  border-top: 1px solid rgba(0, 0, 0, 0.21);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+  filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: width 0.3s ease; /* Animación de transición suave */
+}
+.buscar {
+  width: 92%;
+  height: 100%;
+  vertical-align: middle;
+  border: none;
+  padding: 0px 5px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  outline: none;
+}
+
+/*Slider*/
+
+#carousel-example-generic {
+  position: absolute;
+  width: 100%;
+  height: 202px;
+  top: 92px;
+
+  background: #a09a9a;
+  box-shadow: 0px px 4px rgba(0, 0, 0, 0.25);
+}
+#carousel-example-generic ol {
+  top: 95%;
+}
+.carousel-indicators li {
+  background-color: white;
+}
+.carousel-indicators li.active {
+  background-color: #8368e6;
+}
+.carousel-inner img {
+  height: 202px;
+  width: 100%;
+}
+.carousel-caption {
+  position: absolute;
+  height: 100%;
+  top: 10px;
+
+  font-family: "Sedan";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+
+/*¿Quienes somos?*/
+#quienesSomos {
+  position: absolute;
+  width: 100%;
+  top: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#quienesSomos h3 {
+  width: 100%;
+  text-align: center;
+  margin: 0 10px;
+  font-family: "Raleway";
+  font-style: capitalize;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23px;
+  color: white;
+}
+
+#quienesSomos span {
+  width: 50%;
+  flex-grow: 1;
+  height: 2px;
+  background-color: white;
+}
+#quienesSomostext {
+  padding: 12px;
+  width: 100%;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: justify;
+  font-feature-settings: "tnum" on, "lnum" on;
+
+  color: #ffffff;
+}
+#quienesSomoscontainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+/*ProductosDestacados*/
+#ProductosDestacados {
+  position: absolute;
+  width: 100%;
+  top: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#ProductosDestacados h3 {
+  width: 100%;
+  text-align: center;
+  margin: 0 10px;
+  font-family: "Raleway";
+  font-style: capitalize;
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+}
+
+#ProductosDestacados span {
+  width: 50%;
+  flex-grow: 1;
+  height: 2px;
+  background-color: white;
+}
+#ProductosDestacadoscontainer {
+  display: flex;
+  width: 100%;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: justify;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #ffffff;
+  align-items: center;
+}
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  width: 100%;
+  margin-top: 10px;
+}
+.catalogo img {
+  top: 10px;
+  position: relative;
+  order: 1;
+  width: 90%;
+  height: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+.catalogo h4 {
+  order: 2;
+  position: relative;
+  top: 30px;
+  width: 100%;
+  margin: 1px 0 1px 0;
+  padding: 0 2px 0;
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: black;
+}
+.catalogo p {
+  order: 3;
+  position: relative;
+  top: 28px;
+  margin: 1px 0 0 0;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: black;
+}
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 195px;
+  height: 250px;
+  background-color: #d7c0ff;
+  border-width: 8px 5px 34px 5px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 11px;
+  margin: 5px;
+}
+/*CómoComprar*/
+#cómoComprar {
+  position: absolute;
+  width: 100%;
+  top: 170vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#cómoComprar h3 {
+  width: 100%;
+  text-align: center;
+  margin: 0 10px;
+  font-family: "Raleway";
+  font-style: capitalize;
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+}
+
+#cómoComprar span {
+  width: 50%;
+  flex-grow: 1;
+  height: 2px;
+  background-color: white;
+}
+#cómoComprarcontainer {
+  display: flex;
+  width: 100%;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: justify;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #ffffff;
+  align-items: center;
+}
+#cómoComprartext {
+  padding: 12px;
+  width: 100%;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: justify;
+  font-feature-settings: "tnum" on, "lnum" on;
+
+  color: #ffffff;
+}
+
+/*Menú hamburguesa*/
+.menubur {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 999;
+  height: 320px;
+  background-color: #d2bbda;
+  transition: 0.2s ease-out;
+  overflow-y: hidden;
+  transform: translatey(100%);
+}
+.mostrar {
+  transform: translatey(0%);
+}
+.toggle-btn {
+  border: none;
+  width: 52px;
+  height: 52px;
+  background-color: white;
+  border-radius: 999px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.toggle-btn :active {
+  border: none;
+}
+.toggle-btn span {
+  background-color: #4526f5;
+  height: 4px;
+  width: 30px;
+  margin-top: 3px;
+}
+
+.regresar {
+  border: none;
+  background: none;
+  position: fixed;
+  outline: none;
+  display: none;
+}
+
+footer {
+  z-index: 1000;
+  position: fixed;
+  width: max-content;
+  bottom: 20px;
+  right: 20px;
+}
+#Pags {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Pags a {
+  margin: 5px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: white;
+  border-bottom: solid white 2px;
+}
+#Pags a:first-child {
+  margin-top: 20px;
+}
+
+/*Menú pc*/
+.pagsPcItem a,
+a:visited,
+a:active,
+a:focus,
+a:hover {
+  text-decoration: none !important;
+  color: white !important;
+  outline: none;
+}
+.pagsPc {
+  height: 100%;
+  width: 40%;
+  display: none;
+}
+.pagsPcList {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+
+/*buscador pc*/
+.buscador-containerpc {
+  display: flex;
+  width: 15%;
+  height: max-content;
+  background: none;
+  display: none;
+}
+.buscarpc {
+  width: 100%;
+  border: none;
+  color: white;
+  border-bottom: #7f4ffc solid 3px;
+  background: none;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  outline: none;
+}
+.buscador-containerpc img {
+  width: 25px;
+}
+.buscarpc::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+.pagsPcItem {
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-family: Raleway;
+  font-style: normal;
+  line-height: normal;
+}
+/******
+    *******
+    DESKTOP
+    *******
+    ******/
+
+@media (min-width: 1020px) {
+  /*navbar pc*/
+  .menu {
+    height: 60px;
+  }
+  .logo {
+    width: 12%;
+    order: 0;
+  }
+  #logotext {
+    font-size: 50px;
+  }
+  .pagsPc {
+    display: block;
+  }
+  .toggle-btn {
+    display: none;
+  }
+
+  .buscador-container {
+    display: none;
+  }
+  .buscador-containerpc {
+    display: flex;
+    width: 15%;
+  }
+  .usuario {
+    width: 1%;
+  }
+  #carrito {
+    width: 1%;
+  }
+  /*Slider desktop*/
+
+  #carousel-example-generic {
+    display: block;
+    width: 90%;
+    height: 487px;
+    margin-left: 5%;
+    top: 92px;
+    background: #a09a9a;
+    box-shadow: 0px px 4px rgba(0, 0, 0, 0.25);
+  }
+  #carousel-example-generic ol {
+    position: absolute;
+    top: 120%;
+  }
+
+  .carousel-indicators li.active {
+    background-color: #8368e6;
+  }
+  .carousel-inner img {
+    height: 100%;
+    width: 100%;
+  }
+
+  #quienesSomos {
+    top: 128rem;
+  }
+  #quienesSomos h3 {
+    margin: 0 10px;
+    font-size: 35px;
+  }
+
+  #quienesSomos span {
+    width: 100%;
+  }
+  #quienesSomostext {
+    width: 95%;
+    padding: 40px;
+    font-size: 20px;
+  }
+
+  #ProductosDestacados {
+    top: 85rem;
+  }
+  #ProductosDestacados h3 {
+    margin: 0 10px;
+    font-size: 35px;
+  }
+
+  #ProductosDestacados span {
+    width: 100%;
+  }
+
+  .catalogo {
+    margin-top: 20px;
+  }
+  #cómoComprar {
+    top: 150rem;
+  }
+  #cómoComprar h3 {
+    margin: 0 10px;
+    font-size: 35px;
+  }
+  #cómoComprar span {
+    width: 100%;
+  }
+  #cómoComprartext {
+    width: 90%;
+    padding: 40px 30px 20px 40px;
+  }
+}
+
+/*********
+**********
+TABLET
+**********
+**********
+*/
+
+@media (min-width: 800px) and (max-width:1024px) {
+  .menu {
+    height: 60px;
+  }
+  .logo {
+    width: 40%;
+    order: 0;
+  }
+  #logotext {
+    font-size: 50px;
+  }
+  .buscador-container {
+    display: none;
+  }
+  .buscador-containerpc {
+    display: flex;
+    width: 40%;
+  }
+  .buscador-containerpc img{
+    margin-left: 10px;
+  }
+  .usuario {
+    width: 5%;
+  }
+  #carrito {
+    width: 5%;
+  }
+  /*Slider desktop*/
+
+  #carousel-example-generic {
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    top: 92px;
+    background: #a09a9a;
+    box-shadow: 0px px 4px rgba(0, 0, 0, 0.25);
+  }
+  #carousel-example-generic ol {
+    position: absolute;
+    top: 350px;
+  }
+
+  .carousel-indicators li.active {
+    background-color: #8368e6;
+  }
+  .carousel-inner img {
+    height: 100%;
+    width: 100%;
+  }
+
+  #quienesSomos {
+    top: 105rem;
+  }
+  #quienesSomos h3 {
+    margin: 0 10px;
+    font-size: 32px;
+  }
+
+  #quienesSomos span {
+    width: 100%;
+  }
+  
+  #quienesSomostext {
+    width: 95%;
+    padding: 40px;
+    font-size: 20px;
+  }
+
+  #ProductosDestacados h3 {
+    margin: 0 10px;
+    font-size: 35px;
+  }
+
+  #ProductosDestacados span {
+    width: 100%;
+  }
+
+  .catalogo {
+    margin-top: 20px;
+  }
+  #cómoComprar {
+    top: 135rem;
+  }
+  #cómoComprar h3 {
+    margin: 0 10px;
+    font-size: 32px;
+  }
+  #cómoComprar span {
+    width: 100%;
+  }
+  #cómoComprartext {
+    width: 90%;
+    padding: 40px 30px 20px 40px;
+  }
+}
+

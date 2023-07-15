@@ -1,0 +1,457 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+html{
+    background: #C3ACEB;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    background-color: #C3ACEB;
+
+}
+.menu{
+    display: flex;
+    width: 100%;
+    height: 51px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 34.38%, rgba(0, 0, 0, 0) 66.94%) #8368E6;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+.logo{
+    height: max-content;
+    width: 55%;
+    order: 2;
+    padding-bottom: 7px;
+}
+#logotext{
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44.16px;
+
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: none;
+}
+#carrito{
+    width: 20%;
+    height: max-content;
+    border: none;
+    background:none;
+    z-index: 1;
+    order: 1;
+}
+#carrito img{
+    z-index: 0;
+}
+/*Carrito aside*/
+.micompra{
+    transform: translateX(100%);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 234px;
+    height: 100%;
+    z-index: 16;
+    transition:  .1s ease-out;
+    background-color: #D2BBDA;;
+
+}
+.mostrarcompra{
+    transform: translate(0%);
+}
+.carritonav{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: flex-start;
+    width: 100%;
+    height: 4%;
+    background: rgba(131, 104, 230, 0.34);
+    border-bottom: 1px solid #FFFFFF;
+}
+.micompra h3{
+width: max-content;
+margin: 0px;
+padding:1px 0 0 10px;
+font-family: 'Raleway';
+font-style: normal;
+flex-grow: 1;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-transform: capitalize;
+font-feature-settings: 'tnum' on, 'lnum' on;
+
+color: #FFFFFF;
+}
+
+.micompra #carritoimg{
+    align-self: center;
+    position: relative;
+    top: 35%;
+
+    opacity: 0.20;
+    height: 128px;
+    width: 125px;
+}
+.micompra #arrowback{
+    padding-right: 5px;
+    background:none;
+    border: none;
+}
+
+
+
+
+.usuario{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 20%;
+    height: max-content;
+    order: 3;
+}
+
+/*Barra navegación*/
+.buscador-container{
+    margin: auto;
+    width: 80%;
+    height: 29px;
+    top: 51px;
+    padding: 0;
+
+    background: #FFFFFF;
+    border-top:1px solid rgba(0, 0, 0, 0.21); ;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: width 0.3s ease; /* Animación de transición suave */
+
+
+}
+.buscar{
+    width: 92%;
+    height: 100%;
+    vertical-align: middle;
+    border: none;
+    padding: 0px 5px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    outline: none;
+}
+
+
+.titulohowbuy{
+    position: absolute;
+    width: 100%;
+    height: 39px;
+    display: flex;
+    justify-items: center;
+    top: 87px;
+    align-items: center;
+    justify-content: center;
+}
+.titulohowbuy h2{
+    margin: 0px 2px 0px 2px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #FFFFFF;
+}
+.titulohowbuy span{
+    width: 30%;
+    height: 2px;
+    background-color: white;
+}
+
+.howToBuyText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 125px;
+    text-align: justify;
+    padding: 10px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #FFFFFF;
+
+}
+.howToBuyText p{
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+
+
+
+/*Menú hamburguesa*/
+.menubur{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 320px;
+    background-color: #D2BBDA;
+    transition: .2s ease-out;
+    overflow-y:hidden;
+    transform: translatey(100%);
+    
+}
+.mostrar{
+    transform: translatey(0%);
+}
+.toggle-btn{
+    border: none;
+    width:52px;
+    height: 52px;
+    background-color: white;
+    border-radius: 999px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.toggle-btn :active{
+    border: none;
+}
+.toggle-btn span{
+    background-color: #4526F5;
+    height: 4px;
+    width: 30px;
+    margin-top: 3px;
+}
+
+.regresar{
+    border: none;
+    background:none;
+    position: fixed;
+    outline: none;
+    display:none;
+}
+
+footer{
+    position: fixed;
+    width: max-content;
+    bottom: 20px;
+    right: 20px;
+}
+#Pags{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#Pags a{
+    margin: 5px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: white;
+    border-bottom: solid white 2px;
+
+}
+#Pags a:first-child{
+    margin-top: 20px;
+}
+
+/*Menú pc*/
+.pagsPcItem a,
+a:visited,
+a:active,
+a:focus,
+a:hover {
+  text-decoration: none !important;
+  color: white !important;
+  outline: none;
+}
+.pagsPc {
+  height: 100%;
+    width: 40%;
+    display: none;
+  }
+  .pagsPcList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+  }
+  
+  
+  
+  
+  
+  /*buscador pc*/
+  .buscador-containerpc {
+    display: flex;
+    width: 15%;
+    height: max-content;
+    background: none;
+    display: none;
+  }
+  .buscarpc {
+    width: 100%;
+    border: none;
+    color: white;
+    border-bottom: #7f4ffc solid 3px;
+    background: none;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    outline: none;
+  }
+  .buscador-containerpc img {
+    width: 25px;
+  }
+  .buscarpc::placeholder{
+    color: white;
+    opacity: 0.50;
+  }
+  .pagsPcItem {
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    font-family: Raleway;
+    font-style: normal;
+    line-height: normal;
+  }
+  
+  /******
+      *******
+      DESKTOP
+      *******
+      ******/
+  
+  @media (min-width: 1024px) {
+    /*navbar pc*/
+    .menu {
+      height: 60px;
+    }
+    .logo {
+      width: 12%;
+      order: 0;
+    }
+    #logotext {
+      font-size: 50px;
+    }
+    .pagsPc {
+      display: block;
+    }
+    .toggle-btn {
+      display: none;
+    }
+  
+    .buscador-container {
+      display: none;
+    }
+    .buscador-containerpc {
+      display: flex;
+      width: 15%;
+    }
+    .usuario {
+      width: 1%;
+    }
+    #carrito {
+      width: 1%;
+    }
+    .titulohowbuy h2{
+      font-size: 35px;
+      line-height: 1;
+  }
+    .titulohowbuy span{
+      width: 50%;
+    }
+    .howToBuyText{
+      top: 150;
+      padding: 40px;
+      width: 90%;
+    }
+}
+/*********
+**********
+TABLET
+**********
+**********
+*/
+@media (min-width: 800px) and (max-width:1024px) {
+  .menu {
+    height: 60px;
+  }
+  .logo {
+    width: 40%;
+    order: 0;
+  }
+  #logotext {
+    font-size: 50px;
+  }
+  .buscador-container {
+    display: none;
+  }
+  .buscador-containerpc {
+    display: flex;
+    width: 40%;
+  }
+  .buscador-containerpc img{
+    margin-left: 10px;
+  }
+  .usuario {
+    width: 5%;
+  }
+  #carrito {
+    width: 5%;
+  }
+  .titulohowbuy h2{
+    font-size: 30px;
+    line-height: 1;
+}
+  .titulohowbuy span{
+    width: 50%;
+  }
+  .howToBuyText{
+    padding: 40px;
+
+  }
+}
